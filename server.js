@@ -1,13 +1,14 @@
 const express = require("express");
 const mysql   = require("mysql");
 const bodyParser  = require("body-parser");
-const md5 = require('MD5'); 
+
 
 const verifyToken = require('./middleware/verifyToken');
 const addNewUser = require('./middleware/addNewUser');
 const userLoginCheck = require('./middleware/userLoginCheck');
 const findAllUsers = require('./middleware/findAllUsers'); 
 const welcome = require('./middleware/welcome');
+const validateFields = require('./middleware/validateFields');
 
 const port = process.env.PORT || 9000;
 
@@ -19,7 +20,7 @@ app.listen(port, function() {
     console.log('Express server listening on port ' + port);
 });
 
-app.post('/signup', addNewUser);
+app.post('/signup',validateFields,addNewUser);
 app.post('/userlogin', userLoginCheck);
 
 
