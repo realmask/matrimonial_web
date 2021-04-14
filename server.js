@@ -35,4 +35,4 @@ apiRoutes.get('/', welcome);
 apiRoutes.get('/users', findAllUsers);
 
 app.use('/api', apiRoutes);
-console.log(apiRoutes)
+

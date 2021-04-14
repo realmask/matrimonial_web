@@ -10,7 +10,7 @@ require('dotenv').config();
  */
  
 const verifyToken=function (req, res,next) {
-	console.log("hello")
+
 	const token = req.body.token || req.query.token || req.headers['token'];
 	 if (token) {
 		// verify secret and checks exp
