@@ -23,17 +23,11 @@ app.listen(port, function() {
 app.post('/signup',validateFields,addNewUser);
 app.post('/userlogin', userLoginCheck);
 
-
-
-
-const apiRoutes = express.Router();
-apiRoutes.use(bodyParser.urlencoded({ extended: true }));
-apiRoutes.use(bodyParser.json());
-
 //route middleware to verify a token 
-apiRoutes.use(verifyToken);
-apiRoutes.get('/', welcome);
-apiRoutes.get('/users', findAllUsers);
+app.use(verifyToken);
 
-app.use('/api', apiRoutes);
+app.get('/', welcome);
+app.get('/users', findAllUsers);
+
+
 
