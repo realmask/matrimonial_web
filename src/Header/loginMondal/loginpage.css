@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}.login_container{
+    width: 100%;
+    height: 100%;
+    background-color:transparent ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1 ;
+    background-color:rgb(63, 61,61 ,0.692);
+ 
+}
+.login_container .login_page_row{
+       display:flex;
+       flex-direction: column;
+       background-color: rgb(252, 233, 233);
+       border-radius: 4px;
+       width: 350px;
+       height: max-content;
+       
+} 
+.login_container .login_page_row .login_page_header{
+    background-color: rgb(255, 108, 108);
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 10px;
+    align-items: center;
+}
+.login_container .login_page_row .login_page_header h3{
+    font-size: x-large;
+    padding-left: 8px;
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+.login_container .login_page_row .login_page_header span{
+    cursor: pointer;
+    font-size: 25px;
+    color: whitesmoke;
+    background-color: transparent;
+    outline: none;
+    border-color: transparent;
+    padding: 8px;
+}
+.login-button-row{
+
+    display: flex;
+    flex-direction: row;
+}
+.login_container .login_page_row .login_page_col{
+   padding: 10px;
+   
+
+}
+.login_container .login_page_row .login_page_col form {
+    font-size: large;
+    font-weight: 600;
+
+}
+.login_container .login_page_row .login_page_col form .login-form-elemnts{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.login_container .login_page_row .login_page_col form .login-form-elemnts input{
+
+     height: 40px;
+     padding-left: 10px;
+
+}
+.login_container .login_page_row .login_page_col form .login-form-elemnts input[type="email"] , input[type="password"] {
+    font-size: large;
+    font-weight: 400;
+}
+.login_container .login_page_row .login_page_col form .login-form-elemnts input::placeholder {
+    font-size: medium;
+
+}
+.login_container .login_page_row .login_page_col form .login-button-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.login_container .login_page_row .login_page_col form .login-button-row button{
+    background-color: rgb(242, 91, 91);
+    font-size: 15px;
+    
+}
+.login_container .login_page_row .login_page_col form .login-button-row .check-box p{
+    margin: 0;
+    padding: 2px;
+}
+.login_container .login_page_row .login_page_col form .login-button-row .check-box {
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    align-items: center;
+    padding: 8px;
+}

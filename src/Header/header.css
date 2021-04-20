@@ -1,0 +1,56 @@
+
+.bannerDesign p:first-child{
+    font-size: 35px;
+    font-style: oblique;
+    font-family:'Indie Flower', cursive;
+    color: rgb(187, 33, 33);
+    
+    
+}
+.bannerDesign p:last-child{
+    font-size:34px;
+    width:400px;
+    height: 330px;
+    font-style: oblique;
+    font-weight: bolder;
+    font-family:'Dancing Script', cursive;
+    margin-left: 25px;
+    padding: 4px;
+    color: rgb(231, 206, 206);
+}
+
+
+.navbar{
+
+    background-color:  rgba(151, 19, 10, 0.892);
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+ 
+ }
+ .navbar .logo img{
+ height: 40px;
+ width: 96px;
+ }
+ .navbar a {
+    color:white;
+    font-weight: 500;
+    padding: 10px ;
+    transition-duration: initial;
+    
+ }
+ .navbar a:hover{
+   color: rgb(192, 176, 29);
+   text-decoration: none;
+   font-size: larger;
+   border-bottom:  rgb(111, 37, 29);
+ }
+ 
+ .try{
+    /* background-image: url(/banner.jpg) no-repeat center center fixed; */
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   
+ }
